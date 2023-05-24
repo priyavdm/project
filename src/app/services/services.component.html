@@ -1,0 +1,19 @@
+<p>services works!</p>
+<h1>services table</h1>
+<table>
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>gender</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let r of s.arr">
+        <tr>
+            <td>{{r.name}}</td>
+            <td>{{r.age}}</td>
+            <td>{{r.gender}}</td>
+        </tr>
+    </tbody>
+</table>
+{{s.variable}}
