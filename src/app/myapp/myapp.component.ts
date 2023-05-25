@@ -89,7 +89,7 @@ export class MyappComponent implements OnInit,OnChanges,AfterViewInit,AfterConte
    onClick(e:any){
     this.title='firstproject'
     this.isDisabled=!this.isDisabled;
-    this.array.push({name:'nandhu',age:22,gender:'female'},{name:'priya',age:22,gender:'male'});
+    this.array.push({name:'nandhu',age:22,gender:'male'},{name:'priya',age:22,gender:'female'});
     console.log(e);
     
    }

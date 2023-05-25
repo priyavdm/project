@@ -8,7 +8,7 @@ import { MyappComponent } from './myapp/myapp.component';
 })
 export class AppComponent implements AfterViewInit{
   ngAfterViewInit(): void {
-    // throw new Error('Method not implemented.');
+// throw new Error('Method not implemented.');
     this.message=this.child.title;
   }
   title = 'finstein';
@@ -37,6 +37,5 @@ export class AppComponent implements AfterViewInit{
 
   capChild(event:string){
     console.log(event);
-    
-  }
+     }
 }

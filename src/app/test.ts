@@ -1,7 +1,7 @@
-class example {
-    variable:number=10;
-}
-export class studentList extends example{
+// class example {
+//     variable:number=10;
+// }
+export class studentList {
     arr:any[]=[{
         name:'priyu',
         age:22,
@@ -18,9 +18,10 @@ export class studentList extends example{
         gender:'female'
       }
     ]
+    status:boolean;
 
-    constructor(){
-        super();
-
+    constructor(status:boolean){
+        // super();
+         this.status=status;
     }
 }
