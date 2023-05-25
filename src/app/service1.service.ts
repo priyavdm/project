@@ -1,27 +1,15 @@
 import { Injectable } from '@angular/core';
+import {HttpClient} from '@angular/common/http'
 
 @Injectable({
   providedIn: 'root'
 })
 export class Service1Service {
-
-  constructor() { }
+  url='http://localhost:4200/assets/studentlist.json'
+  
+  
+  constructor(private http:HttpClient) { }
   getstudentList(){
-    return [{
-      name:'priyu',
-      age:22,
-      gender:'female'
-    },
-    {
-      name:'sonia',
-      age:22,
-      gender:'female'
-    },
-    {
-      name:'aji',
-      age:22,
-      gender:'female'
-    }
-  ]
+     return this.http.get(this.url);
   }
 }

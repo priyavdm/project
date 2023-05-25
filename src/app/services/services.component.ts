@@ -27,9 +27,15 @@ export class ServicesComponent implements OnInit{
 //  s = new studentList();
 studentList:any;
 constructor(public s:Service1Service){}
+  // ngOnInit(): void {
+  //   // throw new Error('Method not implemented.');
+  //   this.studentList=this.s.getstudentList();
+  // }
   ngOnInit(): void {
     // throw new Error('Method not implemented.');
-    this.studentList=this.s.getstudentList();
+    this.s.getstudentList()
+    .subscribe((data)=>this.studentList=data);
   }
+
 
 }

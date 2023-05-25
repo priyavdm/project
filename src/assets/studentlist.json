@@ -1,0 +1,17 @@
+[
+    {
+    "name":"priyu",
+    "age":22,
+    "gender":"female"
+  },
+  {
+    "name":"sonia",
+    "age":22,
+    "gender":"female"
+  },
+  {
+    "name":"aji",
+    "age":22,
+    "gender":"female"
+  }
+]

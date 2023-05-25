@@ -8,6 +8,8 @@ import {FormsModule} from '@angular/forms';
 import { TestlifecycleComponent } from './testlifecycle/testlifecycle.component';
 import { ServicesComponent } from './services/services.component';
 import { LearnserviceComponent } from './learnservice/learnservice.component';
+import {Service1Service} from "./service1.service"
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,9 +22,10 @@ import { LearnserviceComponent } from './learnservice/learnservice.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [Service1Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
